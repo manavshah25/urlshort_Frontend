@@ -165,8 +165,7 @@ const Index = () => {
                 </LocalizationProvider>
                 <center>
                   <Typography pt={1}>
-                    * Note Url will be valid till this Date & time or By Default
-                    one Day
+                  Note: URL will be valid till this date & time or by default 1 day
                   </Typography>
                 </center>
               </Grid>

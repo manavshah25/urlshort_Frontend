@@ -1,1 +1,1 @@
-export const baseUrl = "https://urlshort-backend-ro1s.onrender.com";
+export const baseUrl = "https://shortlinkb.onrender.com";
