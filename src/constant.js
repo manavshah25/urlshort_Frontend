@@ -1,1 +1,1 @@
-export const baseUrl = "http://localhost:8000";
+export const baseUrl = "https://urlshort-backend-ro1s.onrender.com";
