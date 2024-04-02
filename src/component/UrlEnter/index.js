@@ -46,9 +46,11 @@ const Index = () => {
   };
   const onGenerate = async () => {
     try {
+      const pattern =/(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z]{2,}(\.[a-zA-Z]{2,})(\.[a-zA-Z]{2,})?\/[a-zA-Z0-9]{2,}|((https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z]{2,}(\.[a-zA-Z]{2,})(\.[a-zA-Z]{2,})?)|(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}(\.[a-zA-Z0-9]{2,})?/g;
+        
       console.log(`${baseUrl}/generate`);
       console.log(Data);
-      if (Data.url.length > 0) {
+      if (Data.url.length > 0 && pattern.test(Data.url) ) {
         const short = await fetch(`${baseUrl}/generate`, {
           method: "POST",
           headers: {
