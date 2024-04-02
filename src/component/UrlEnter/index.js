@@ -95,23 +95,24 @@ const Index = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Grid container>
+      <Grid  container sx={{display:'flex',alignItems: 'center', justifyContent: 'center'}}>
         <ToastContainer position="top-right" autoClose={5000} theme="light" />
         <ToastContainer />
         <Grid
-          mt={{ xl: 12, md: 12, sm: 12, xs: 12, lg: 12 }}
+          // mt={{ xl:15, md: 12, sm: 30, xs: 30, lg: 15 }}
           item
-          xl={12}
-          md={12}
-          xs={12}
-          lg={12}
-          sm={12}
+          xl={8}
+          lg={8}
+          md={10}
+          sm={10}
+          xs={10}
+          sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}
         >
           <Box
             p={4}
             sx={{
               boxShadow: "5px 5px white",
-              width: "100vh",
+              width: "100%",
               background: grey[300],
               borderRadius: "20px",
               display: "flex",
