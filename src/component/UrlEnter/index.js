@@ -99,13 +99,13 @@ const Index = () => {
         <ToastContainer position="top-right" autoClose={5000} theme="light" />
         <ToastContainer />
         <Grid
-         m={{ xl:15, md: 12, sm: 20, xs: 15, lg: 15 }}
+         m={{ xl:15, md: 12, sm: 18, xs: 8, lg: 15 }}
           item
           xl={8}
           lg={8}
           md={10}
-          sm={10}
-          xs={10}
+          sm={11}
+          xs={11}
           sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}
         >
           <Box
